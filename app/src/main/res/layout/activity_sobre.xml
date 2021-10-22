@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvedores"
+        android:textSize="25sp"
+        android:fontFamily="@font/neufreit_bold"
+        android:layout_gravity="center"
+        android:textColor="@color/bluee_500" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Áris Souza"
+        android:textSize="18sp"
+        android:fontFamily="@font/neufreit_bold"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/neufreit_bold"
+                android:gravity="center"
+                android:text="Rafael Moreira"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Pedro Victor"
+        android:textSize="18sp"
+        android:fontFamily="@font/neufreit_bold"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Thiago Alex"
+                android:textSize="18sp"
+                android:fontFamily="@font/neufreit_bold"
+                android:gravity="center"
+                android:textColor="@color/white" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Projeto"
+        android:textSize="25sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/neufreit_bold"
+        android:layout_gravity="center"
+        android:textColor="@color/bluee_500" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/lottieImage"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                app:lottie_rawRes="@raw/car_race"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:text="SiPDC"
+        android:textSize="18sp"
+        android:fontFamily="@font/neufreit_bold"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Versão 1.0.1"
+        android:textSize="18sp"
+        android:fontFamily="@font/neufreit_bold"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="5dp"
+        android:text="sipdc@gmail.com"
+        android:textSize="18sp"
+        android:fontFamily="@font/neufreit_bold"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
