@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iot.bumblebee">
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
 
     <application
         android:allowBackup="true"
@@ -30,14 +33,28 @@
             android:name=".ui.MenuActivity"
             android:theme="@style/BumblebeeTwo.NoActionBar" />
         <activity
-            android:name=".ui.BumblebeeActivity"
+            android:name=".ui.RelatorioActivity"
             android:theme="@style/BumblebeeOne.NoActionBar" />
         <activity
             android:name=".ui.RegisterActivity"
             android:theme="@style/BumblebeeOne.NoActionBar" />
+
         <activity
-            android:name=".ui.LoginActivity"
+            android:name=".ui.ActivityLogin"
             android:theme="@style/BumblebeeOne.NoActionBar" />
+
+        <activity
+            android:name=".ui.ActivityShowLogin"
+            android:theme="@style/BumblebeeOne.NoActionBar" />
+
+        <activity
+            android:name=".ui.ActivityBumblebee"
+            android:theme="@style/BumblebeeOne.NoActionBar" />
+
+        <activity
+            android:name=".ui.ActivityConfiguracao"
+            android:theme="@style/BumblebeeTwo.NoActionBar" />
+
     </application>
 
 </manifest>

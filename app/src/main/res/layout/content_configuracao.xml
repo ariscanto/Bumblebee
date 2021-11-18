@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/neufreit_bold"
+                android:textColor="#656565"
+                android:textSize="20sp"
+                android:text="Configurações"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_edit"
+                    app:tint="#656565"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bariol_bold"
+                        android:textColor="#656565"
+                        android:textSize="18sp"
+                        android:text="Editar Informações"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:drawableEndCompat="@drawable/ic_angle_small_right"
+                        app:drawableTint="#656565" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_wifi_alt"
+                    app:tint="#656565"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bariol_bold"
+                        android:textColor="#656565"
+                        android:textSize="18sp"
+                        android:text="Configurar Conexão"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:drawableEndCompat="@drawable/ic_angle_small_right"
+                        app:drawableTint="#656565"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?android:selectableItemBackground"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_margin="10dp"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_info"
+                    app:tint="#656565"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:textStyle="bold"
+                        android:fontFamily="@font/bariol_bold"
+                        android:textColor="#656565"
+                        android:textSize="18sp"
+                        android:text="Sobre o aplicativo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:drawableEndCompat="@drawable/ic_angle_small_right"
+                        app:drawableTint="#656565"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

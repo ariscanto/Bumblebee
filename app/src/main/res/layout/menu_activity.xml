@@ -74,8 +74,8 @@
                 android:background="@drawable/round_white"
                 android:backgroundTint="@color/bluee_500"
                 android:padding="10dp"
-                app:tint="#fff"
-                android:src="@drawable/ic_power" />
+                android:src="@drawable/ic_power"
+                app:tint="#fff" />
 
         </RelativeLayout>
 

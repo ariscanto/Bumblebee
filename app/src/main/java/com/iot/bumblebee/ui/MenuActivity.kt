@@ -24,7 +24,7 @@ class MenuActivity : AppCompatActivity() {
     private fun setupListeners() {
 
         binding.tarefas.setOnClickListener {
-            val intent = Intent(this, BumblebeeActivity::class.java)
+            val intent = Intent(this, RelatorioActivity::class.java)
             startActivity(intent)
         }
 

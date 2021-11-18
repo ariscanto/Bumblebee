@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "466641424218",
+    "project_id": "bumblebee-app-25a7b",
+    "storage_bucket": "bumblebee-app-25a7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466641424218:android:7cdb88bfd0c0833265ad63",
+        "android_client_info": {
+          "package_name": "com.iot.bumblebee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466641424218-59atonlg4saoptuhv3p95keuvrqe0quj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDncZKn6afTTTunZALsawpnRKtle6kv3ug"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466641424218-59atonlg4saoptuhv3p95keuvrqe0quj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

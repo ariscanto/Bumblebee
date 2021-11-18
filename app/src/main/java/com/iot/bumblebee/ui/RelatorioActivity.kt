@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.iot.bumblebee.databinding.ActivityBumblebeeBinding
 import java.util.*
 
-class BumblebeeActivity : AppCompatActivity() {
+class RelatorioActivity : AppCompatActivity() {
     private lateinit var binding: ActivityBumblebeeBinding
     private lateinit var runnable: Runnable
 
