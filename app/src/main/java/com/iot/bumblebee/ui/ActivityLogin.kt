@@ -7,11 +7,17 @@ import androidx.cardview.widget.CardView
 import android.widget.ProgressBar
 import com.google.firebase.auth.FirebaseAuth
 import android.content.Intent
-import android.widget.LinearLayout
+import android.graphics.BlendMode
+import android.graphics.BlendModeColorFilter
+import android.graphics.PorterDuff
+import android.graphics.drawable.Drawable
+import android.os.Build
 import android.os.Bundle
 import android.view.View
+import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
+import androidx.core.content.res.ResourcesCompat
 import com.iot.bumblebee.R
 
 class ActivityLogin : AppCompatActivity() {
@@ -20,27 +26,24 @@ class ActivityLogin : AppCompatActivity() {
     private lateinit var btnLogin: CardView
     private lateinit var loginProgress: ProgressBar
     private lateinit var mAuth: FirebaseAuth
-    private lateinit var linearLayoutRedzinho: LinearLayout
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        val cardView = findViewById<View>(R.id.btnChamaTelaCadastro) as CardView
-        cardView.setOnClickListener {
+        val linkRegisterUser = findViewById<View>(R.id.linkCadastro) as TextView
+        linkRegisterUser.setOnClickListener {
             val builder = CircularReveal.Builder(
                 this,
-                cardView,
+                linkRegisterUser,
                 Intent(this, RegisterActivity::class.java),
                 1000
             ).apply {
                 revealColor = ContextCompat.getColor(
                     this@ActivityLogin,
-                    R.color.purple_500
+                    R.color.black_500
                 )
             }
             CircularReveal.presentActivity(builder)
         }
-        linearLayoutRedzinho = findViewById(R.id.linearLayoutRedzinho)
-        linearLayoutRedzinho.visibility = View.VISIBLE
         userMail = findViewById(R.id.editTextTextEmailAddress)
         userPassword = findViewById(R.id.editTextTextPasswordAdress)
         btnLogin = findViewById(R.id.btnLogin)
@@ -49,7 +52,9 @@ class ActivityLogin : AppCompatActivity() {
         loginProgress.visibility = View.INVISIBLE
         btnLogin.setOnClickListener(View.OnClickListener {
             loginProgress.visibility = View.VISIBLE
-            btnLogin.visibility = View.INVISIBLE
+            //loginProgress.indeterminateDrawable.setColorFilter(0xFFFF0000.toInt(), android.graphics.PorterDuff.Mode.MULTIPLY);
+            setColorFilter(loginProgress.indeterminateDrawable, ResourcesCompat.getColor(applicationContext.resources, R.color.white, null))
+            btnLogin.visibility = View.VISIBLE
             val mail = userMail.text.toString()
             val password = userPassword.text.toString()
             if (mail.isEmpty() || password.isEmpty()) {
@@ -75,7 +80,7 @@ class ActivityLogin : AppCompatActivity() {
                 ).apply {
                     revealColor = ContextCompat.getColor(
                         this@ActivityLogin,
-                        R.color.purple_500
+                        R.color.black_500
                     )
                 }
                 CircularReveal.presentActivity(builder)
@@ -106,6 +111,15 @@ class ActivityLogin : AppCompatActivity() {
             val intent = Intent(this, ActivityBumblebee::class.java)
             startActivity(intent)
             finish()
+        }
+    }
+
+    private fun setColorFilter(drawable: Drawable, color: Int) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            drawable.colorFilter = BlendModeColorFilter(color, BlendMode.SRC_ATOP)
+        } else {
+            @Suppress("DEPRECATION")
+            drawable.setColorFilter(color, PorterDuff.Mode.SRC_ATOP)
         }
     }
 }

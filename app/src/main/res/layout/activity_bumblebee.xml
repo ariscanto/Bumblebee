@@ -22,9 +22,8 @@
         android:layout_height="40dp"
         android:layout_gravity="left"
         android:layout_marginStart="20dp"
-        app:tint="@color/purple_500"
         android:padding="4dp"
-        android:src="@drawable/ic_document" />
+        android:src="@drawable/bambobi_relatorio" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -76,7 +75,7 @@
         android:layout_margin="@dimen/fab_margin"
         android:background="@drawable/round_white"
         android:padding="12dp"
-        app:backgroundTint="@color/purple_500"
+        app:backgroundTint="@color/black_500"
         app:tint="@color/white"
         app:srcCompat="@drawable/ic_navegate" />
 

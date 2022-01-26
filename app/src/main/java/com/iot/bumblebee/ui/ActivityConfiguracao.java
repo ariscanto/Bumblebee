@@ -78,4 +78,11 @@ public class ActivityConfiguracao extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void configuraConexao(View view){
+        Intent intent = new Intent(getApplicationContext(), ConfiguraConexaoActivity.class);
+        startActivity(intent);
+        finish();
+
+    }
 }

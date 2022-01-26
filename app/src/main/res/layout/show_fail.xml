@@ -6,17 +6,6 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <androidx.cardview.widget.CardView
-        app:cardBackgroundColor="#f0f0f0"
-        app:cardElevation="0dp"
-        app:cardCornerRadius="15dp"
-        app:cardPreventCornerOverlap="true"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:orientation="vertical">
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,11 +14,12 @@
 
             <com.airbnb.lottie.LottieAnimationView
                 android:id="@+id/lottieImage"
-                app:lottie_rawRes="@raw/warning_animation"
+                app:lottie_rawRes="@raw/cat_error"
                 app:lottie_autoPlay="true"
                 app:lottie_loop="true"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:layout_gravity="center"/>
 
             <TextView
@@ -39,13 +29,14 @@
                 android:text="Error de Autenticação"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
-                android:textColor="#757575"
-                android:textSize="14sp"
-                android:fontFamily="@font/neufreit_bold"/>
-
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/round"
+                android:backgroundTint="@color/black_500"
+                android:padding="3dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:fontFamily="@font/bariol_bold"/>
 
         </LinearLayout>
-
-    </androidx.cardview.widget.CardView>
 
 </LinearLayout>

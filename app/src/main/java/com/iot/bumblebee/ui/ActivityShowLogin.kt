@@ -30,7 +30,7 @@ class ActivityShowLogin : AppCompatActivity() {
         Handler().postDelayed({
             startActivity(Intent(this, ActivityBumblebee::class.java))
             finish()
-        }, 3900)
+        }, 3550)
     }
 
 

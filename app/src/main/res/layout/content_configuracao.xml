@@ -18,8 +18,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/neufreit_bold"
-                android:textColor="#656565"
+                android:fontFamily="@font/bariol_bold"
+                android:textColor="@color/black_500"
                 android:textSize="20sp"
                 android:text="Configurações"
                 android:layout_marginBottom="10dp"/>
@@ -34,7 +34,7 @@
                     android:layout_margin="10dp"
                     android:padding="12dp"
                     android:src="@drawable/ic_edit"
-                    app:tint="#656565"
+                    app:tint="@color/black_500"
                     android:layout_width="50dp"
                     android:layout_height="50dp" />
 
@@ -49,18 +49,19 @@
                     <TextView
                         android:textStyle="bold"
                         android:fontFamily="@font/bariol_bold"
-                        android:textColor="#656565"
+                        android:textColor="@color/black_500"
                         android:textSize="18sp"
                         android:text="Editar Informações"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:drawableEndCompat="@drawable/ic_angle_small_right"
-                        app:drawableTint="#656565" />
+                        app:drawableTint="@color/black_500" />
 
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
+                android:onClick="configuraConexao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="?android:selectableItemBackground"
@@ -70,7 +71,7 @@
                     android:layout_margin="10dp"
                     android:padding="12dp"
                     android:src="@drawable/ic_wifi_alt"
-                    app:tint="#656565"
+                    app:tint="@color/black_500"
                     android:layout_width="50dp"
                     android:layout_height="50dp" />
 
@@ -85,13 +86,13 @@
                     <TextView
                         android:textStyle="bold"
                         android:fontFamily="@font/bariol_bold"
-                        android:textColor="#656565"
+                        android:textColor="@color/black_500"
                         android:textSize="18sp"
                         android:text="Configurar Conexão"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:drawableEndCompat="@drawable/ic_angle_small_right"
-                        app:drawableTint="#656565"/>
+                        app:drawableTint="@color/black_500" />
 
                 </LinearLayout>
             </LinearLayout>
@@ -107,7 +108,7 @@
                     android:layout_margin="10dp"
                     android:padding="12dp"
                     android:src="@drawable/ic_info"
-                    app:tint="#656565"
+                    app:tint="@color/black_500"
                     android:layout_width="50dp"
                     android:layout_height="50dp" />
 
@@ -122,13 +123,13 @@
                     <TextView
                         android:textStyle="bold"
                         android:fontFamily="@font/bariol_bold"
-                        android:textColor="#656565"
+                        android:textColor="@color/black_500"
                         android:textSize="18sp"
                         android:text="Sobre o aplicativo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         app:drawableEndCompat="@drawable/ic_angle_small_right"
-                        app:drawableTint="#656565"/>
+                        app:drawableTint="@color/black_500" />
 
                 </LinearLayout>
             </LinearLayout>

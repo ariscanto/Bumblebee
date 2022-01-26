@@ -19,25 +19,25 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.482"
+        app:layout_constraintVertical_bias="0.499"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lottie_sucess_bumblebee"
+        app:lottie_rawRes="@raw/success_login"
         tools:ignore="MissingClass" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/bariol_bold"
-        android:text="Usuário Autenticado com sucesso ."
-        android:textColor="#757575"
+        android:text="Usuário Autenticado com sucesso"
+        android:textColor="@color/black_500"
         android:textSize="18sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/name"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.031" />
 
     <TextView
         android:id="@+id/name"
@@ -45,13 +45,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/neufreit_bold"
         android:text="Kainã Gaspar"
-        android:textColor="@color/purple_500"
+        android:textColor="@color/black_500"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottieImage"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.035" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

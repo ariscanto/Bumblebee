@@ -35,6 +35,8 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.iot.bumblebee.R;
 
+import org.w3c.dom.Text;
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -50,7 +52,7 @@ public class RegisterActivity extends AppCompatActivity {
     private String TAG;
     private EditText userEmail, userPassword, userName;
     private CardView btnSalvar;
-    private TextView sigin;
+    private TextView sigin, info_user;
     FirebaseFirestore fStore;
     private FirebaseAuth mAuth;
     String userID;
@@ -73,6 +75,7 @@ public class RegisterActivity extends AppCompatActivity {
         userPassword = (EditText) findViewById(R.id.editTextTextPassword);
         btnSalvar = (CardView) findViewById(R.id.btnSalvar);
         userPhoto = (CircleImageView) findViewById(R.id.regUserPhoto);
+        info_user = (TextView) findViewById(R.id.info_user);
 
         mAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -91,6 +94,7 @@ public class RegisterActivity extends AppCompatActivity {
                     btnSalvar.setVisibility(View.VISIBLE);
 
                 } else {
+                    info_user.setVisibility(View.VISIBLE);
                     loadingDialog = new Dialog(RegisterActivity.this);
                     loadingDialog.setContentView(R.layout.loading_progress_bar);
                     loadingDialog.setCancelable(false);
@@ -202,7 +206,7 @@ public class RegisterActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<Void> task) {
                         if (task.isSuccessful()) {
                             showToastRegisterSuccess();
-                            loadingDialog.cancel();
+                            //loadingDialog.cancel();
                             Intent intent = new Intent(RegisterActivity.this, ActivityLogin.class);
                             startActivity(intent);
                         }else{

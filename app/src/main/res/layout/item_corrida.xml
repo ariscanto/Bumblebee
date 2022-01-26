@@ -56,7 +56,6 @@
                 android:fontFamily="@font/neufreit_bold"
                 android:text="SiPDC"
                 android:gravity="center"
-                android:layout_alignStart="@+id/title"
                 android:layout_alignTop="@+id/layoutInfo"
                 android:layout_alignEnd="@id/layoutInfo"
                 tools:ignore="UnknownIdInLayout" />
@@ -73,8 +72,8 @@
                 android:layout_marginTop="-50dp">
 
                 <ImageView
-                    android:src="@drawable/ic_clock"
-                    app:tint="@color/purple_500"
+                    android:visibility="gone"
+                    app:tint="@color/black_500"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:layout_marginLeft="5dp"
@@ -115,7 +114,7 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/neufreit_bold"
                 android:textStyle="bold"
-                android:textColor="@color/purple_200"
+                android:textColor="@color/black_200"
                 android:maxLines="1"
                 android:drawablePadding="10dp"
                 android:singleLine="true"

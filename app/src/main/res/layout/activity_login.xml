@@ -5,39 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
-    tools:context=".ui.LoginActivity">
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/btnChamaTelaCadastro"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        app:cardBackgroundColor="@color/purple_500"
-        app:cardCornerRadius="8dp"
-        app:cardElevation="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/cardView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.945"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.084">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/neufreit_bold"
-            android:padding="8dp"
-            android:src="@drawable/ic_add"
-            app:tint="@color/white" />
-    </androidx.cardview.widget.CardView>
-
+    android:background="@color/white">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="392dp"
         android:layout_marginEnd="40dp"
         app:cardBackgroundColor="@color/gray_500"
         app:cardCornerRadius="8dp"
@@ -54,22 +29,23 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="10dp"
             android:background="@color/gray_500"
-            android:drawableStart="@drawable/ic_user"
+            android:drawableStart="@drawable/ic_fi_user"
             android:drawablePadding="8dp"
             android:drawableTint="#757575"
             android:ems="10"
-            android:fontFamily="@font/neufreit_bold"
+            android:fontFamily="@font/bariol_bold"
             android:hint="email"
             android:inputType="textEmailAddress"
             android:textColor="@color/black" />
     </androidx.cardview.widget.CardView>
+
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="464dp"
+        android:layout_marginTop="456dp"
         android:layout_marginEnd="40dp"
         app:cardBackgroundColor="@color/gray_500"
         app:cardCornerRadius="8dp"
@@ -90,7 +66,7 @@
             android:drawablePadding="8dp"
             android:drawableTint="#757575"
             android:ems="10"
-            android:fontFamily="@font/neufreit_bold"
+            android:fontFamily="@font/bariol_bold"
             android:hint="senha"
             android:inputType="textPassword"
             android:textColor="@color/black" />
@@ -101,9 +77,9 @@
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="40dp"
-        app:cardBackgroundColor="@color/purple_500"
+        app:cardBackgroundColor="@color/black_500"
         app:cardCornerRadius="8dp"
         app:cardElevation="0dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -116,12 +92,38 @@
             android:layout_height="45dp"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:fontFamily="@font/neufreit_bold"
+            android:fontFamily="@font/bariol_bold"
             android:gravity="center"
             android:text="FAZER LOGIN"
             android:textColor="@color/white" />
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_gravity="center|end"
+            android:layout_marginEnd="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="visible" />
+
     </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/linkCadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bariol_bold"
+        android:text="Fazer Cadastro"
+        android:textColor="@color/black_500"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottieImage"
@@ -133,10 +135,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795"
+        app:layout_constraintVertical_bias="1.0"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
-        app:lottie_rawRes="@raw/lottie_car_animation"
+        app:lottie_rawRes="@raw/black_car"
         tools:ignore="MissingClass" />
 
     <TextView
@@ -144,70 +146,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="304dp"
-        android:fontFamily="@font/neufreit_bold"
+        android:fontFamily="@font/bariol_bold"
         android:text="Login"
-        android:textColor="#757575"
+        android:textColor="@color/black_500"
         android:textSize="19sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.047" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="43dp"
-        android:layout_height="38dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
         android:layout_marginEnd="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.08"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.037"
-        app:srcCompat="@drawable/ic_user"
-        app:tint="@color/purple_500" />
-
-    <LinearLayout
-        android:id="@+id/linearLayoutRedzinho"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginEnd="156dp"
-        android:gravity="center_vertical"
-        android:orientation="horizontal"
-        android:visibility="visible"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
-        app:layout_constraintVertical_bias="0.864">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/neufreit_bold"
-            android:gravity="center"
-            android:text="BumbleBee"
-            android:textColor="#757575"
-            android:textSize="18sp" />
-
-        <ImageView
-            android:layout_width="35dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="15dp"
-            android:src="@drawable/ic_location"
-            android:visibility="gone" />
-
-
-    </LinearLayout>
-
-    <ProgressBar
-        android:visibility="gone"
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnLogin" />
+        app:layout_constraintVertical_bias="0.032"
+        app:srcCompat="@drawable/ic_fi_user" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
